@@ -1,108 +1,26 @@
 @font-face {
-    font-family: Poppins;
-    src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins;
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Regular.ttf');
 }
+
 @font-face {
-    font-family: Poppins-Thin;
-    src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Thin.ttf');
+  font-family: Poppins-Thin;
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Thin.ttf');
 }
+
 @font-face {
-    font-family: Poppins-Bold;
-    src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Bold.ttf');
+  font-family: Poppins-Bold;
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Bold.ttf');
 }
 
-:root {
-    font-size: 16px;
-    /*defino la fuente general*/
-    font-family: Poppins;   
-    /* variables */
-    
-    --texto-blanco: #ffffff;
-    --color-primario: #43B97F;
-    
+.cover {
+  background-image: url('../bg/Background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-* {
-    /* modelo de caja */
-    margin: 0;
-    padding: 0;
-    /**/
+.login-btn {
+  border-radius: 20em;
 }
-
-/* Estilos para el contenedor principal */
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('../bg/Background.svg'); 
-    background-size: cover; /* Para que la imagen cubra todo el área */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-  /* Estilos para el navbar */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    color: #fff;
-    padding: 20px;
-  }
-  
-  
-  .header_logo h3 {
-    margin-left: 1px;
-  }
-  
-  /* Estilos para el menú */
-  .header_menu {
-    display: flex;
-  }
-  
-  .header_menu a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 30px;
-
-  }
-  
-  /* Estilos para el botón de login */
-  .header_login button {
-    background-color: #ffffff; /* Fondo blanco */
-    border: none; /* Sin bordes */
-    color: var(--color-primario); /* Color de texto verde */
-    padding: 8px 16px;
-    border-radius: 20px; /* Bordes redondos */
-    cursor: pointer;
-  }
-  
-  /* Al pasar el mouse sobre el botón */
-  .header_login button:hover {
-    background-color: rgb(224, 224, 224); /* Cambia el color de fondo al pasar el mouse */
-  }
-  
-  /* Estilos para el contenido principal */
-  .main {
-    text-align: center;
-    margin-top: 0;
-    padding-top: 50px; /* Añade espacio para el navbar */
-  }
-  
-  /* Estilos para los textos del contenido principal */
-  .main h1, .main h2, .main button {
-    color: #fff;
-  }
-  
-  .main h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Esto centra verticalmente también */
-  }
-  
