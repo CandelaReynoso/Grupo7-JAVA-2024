@@ -1,16 +1,16 @@
 @font-face {
-  font-family: Poppins;
-  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Thin;
-  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Thin.ttf');
+  src: url('../fonts/Poppins/Poppins-Thin.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Bold.ttf');
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
 .cover {
@@ -23,4 +23,32 @@
 
 .login-btn {
   border-radius: 20em;
+}
+
+.main-title{
+  font-size: 5em;
+  font-family: "Poppins-Bold";
+}
+
+.sub-title{
+  font-size: 2em;
+  font-family: "Poppins-Regular";
+}
+
+body{
+  background-color: #c8ffeb !important;
+}
+
+.circle {
+  background: #43b97f;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+
+.little-circle {
+  background: #e4fff57a;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
