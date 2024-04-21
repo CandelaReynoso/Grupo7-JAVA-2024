@@ -52,3 +52,41 @@ body{
   width: 250px;
   height: 250px;
 }
+
+/* Estilos generales para el texto en las tarjetas */
+/* .card-title,
+.card-text {
+  margin-bottom: 10px;
+} */
+
+/* Media query para pantallas pequeñas (menos de 576px) */
+/* @media (max-width: 575.98px) {
+  .card-title,
+  .card-text {
+    font-size: 14px;
+    padding-right:10px;
+  }
+  .icon{
+    padding: 0px;
+  }
+} */
+
+/* Media query para pantallas medianas (de 576px a 991.98px) */
+/* @media (min-width: 576px) and (max-width: 991.98px) {
+  .card-title,
+  .card-text {
+    font-size: 17px;
+    padding:10px;
+  }
+  .icon{
+  padding:10px;
+  }
+} */
+
+/* Media query para pantallas grandes (más de 992px) */
+/* @media (min-width: 992px) {
+  .card-title,
+  .card-text {
+    font-size: 18px;
+  }
+} */
