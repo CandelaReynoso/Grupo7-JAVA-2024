@@ -53,6 +53,11 @@ body{
   height: 250px;
 }
 
+.carousel {
+  border-radius: 50px;
+  overflow: hidden; 
+}
+
 /* Estilos generales para el texto en las tarjetas */
 /* .card-title,
 .card-text {
