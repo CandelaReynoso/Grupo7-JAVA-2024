@@ -1,16 +1,16 @@
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins;
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Thin;
-  src: url('../fonts/Poppins/Poppins-Thin.ttf');
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Thin.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  src: url('/Web_Viajes_CodoaCodo/Java-Grupo7/fonts/Poppins/Poppins-Bold.ttf');
 }
 
 .cover {
@@ -25,68 +25,7 @@
   border-radius: 20em;
 }
 
-.main-title{
-  font-size: 5em;
-  font-family: "Poppins-Bold";
+.carousel {
+  border-radius: 50px;
+  overflow: hidden; 
 }
-
-.sub-title{
-  font-size: 2em;
-  font-family: "Poppins-Regular";
-}
-
-body{
-  background-color: #c8ffeb !important;
-}
-
-.circle {
-  background: #43b97f;
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
-}
-
-.little-circle {
-  background: #e4fff57a;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
-
-/* Estilos generales para el texto en las tarjetas */
-/* .card-title,
-.card-text {
-  margin-bottom: 10px;
-} */
-
-/* Media query para pantallas pequeñas (menos de 576px) */
-/* @media (max-width: 575.98px) {
-  .card-title,
-  .card-text {
-    font-size: 14px;
-    padding-right:10px;
-  }
-  .icon{
-    padding: 0px;
-  }
-} */
-
-/* Media query para pantallas medianas (de 576px a 991.98px) */
-/* @media (min-width: 576px) and (max-width: 991.98px) {
-  .card-title,
-  .card-text {
-    font-size: 17px;
-    padding:10px;
-  }
-  .icon{
-  padding:10px;
-  }
-} */
-
-/* Media query para pantallas grandes (más de 992px) */
-/* @media (min-width: 992px) {
-  .card-title,
-  .card-text {
-    font-size: 18px;
-  }
-} */
