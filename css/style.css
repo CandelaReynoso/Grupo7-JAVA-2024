@@ -1,19 +1,29 @@
 @font-face {
   font-family: Poppins-Regular;
-  src: url('./fonts/Poppins/Poppins-Regular.ttf');
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Thin;
-  src: url('./fonts/Poppins/Poppins-Thin.ttf');
+  src: url('../fonts/Poppins/Poppins-Thin.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('./fonts/Poppins/Poppins-Bold.ttf');
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
+<<<<<<< HEAD
 
+=======
+.cover {
+  background-image: url('../bg/Background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+>>>>>>> 1b0b3117375ed19f573be160a84a815c508a9e6e
 
 .login-btn {
   border-radius: 20em;
@@ -52,6 +62,7 @@ body{
   overflow: hidden; 
 }
 
+<<<<<<< HEAD
 @keyframes scrollAnimation {
   0% {
     transform: translateY(0);
@@ -78,6 +89,18 @@ body{
 
 
 
+=======
+.card-title{
+  font-family:"Poppins-Bold";
+}
+
+.card-text, .card-subtitle {
+  font-family: "Poppins-Regular";
+}
+.btn-outline-light{
+  font-family: "Poppins-Regular";
+}
+>>>>>>> 1b0b3117375ed19f573be160a84a815c508a9e6e
 /* Estilos generales para el texto en las tarjetas */
 /* .card-title,
 .card-text {
