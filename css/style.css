@@ -13,29 +13,40 @@
   src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
-.cover {
-  background-image: url('../bg/Background.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .login-btn {
   border-radius: 20em;
 }
 
-.main-title{
+.main-title {
   font-size: 5em;
   font-family: "Poppins-Bold";
 }
 
-.sub-title{
+.sub-title {
   font-size: 2em;
   font-family: "Poppins-Regular";
 }
 
-body{
+body {
   background-color: #c8ffeb !important;
 }
 
@@ -55,43 +66,21 @@ body{
 
 .carousel {
   border-radius: 50px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-/* Estilos generales para el texto en las tarjetas */
-/* .card-title,
-.card-text {
-  margin-bottom: 10px;
-} */
+.scroll-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollAnimation 3s infinite;
+}
 
-/* Media query para pantallas pequeñas (menos de 576px) */
-/* @media (max-width: 575.98px) {
-  .card-title,
-  .card-text {
-    font-size: 14px;
-    padding-right:10px;
-  }
-  .icon{
-    padding: 0px;
-  }
-} */
+.scroll-icon {
+  font-size: 60px;
+}
 
-/* Media query para pantallas medianas (de 576px a 991.98px) */
-/* @media (min-width: 576px) and (max-width: 991.98px) {
-  .card-title,
-  .card-text {
-    font-size: 17px;
-    padding:10px;
-  }
-  .icon{
-  padding:10px;
-  }
-} */
-
-/* Media query para pantallas grandes (más de 992px) */
-/* @media (min-width: 992px) {
-  .card-title,
-  .card-text {
-    font-size: 18px;
-  }
-} */
+.card-title {
+  font-family: "Poppins-SemiBold";
+}
