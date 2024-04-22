@@ -13,33 +13,45 @@
   src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
-<<<<<<< HEAD
-
-=======
-.cover {
-  background-image: url('../bg/Background.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
 }
->>>>>>> 1b0b3117375ed19f573be160a84a815c508a9e6e
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url('../fonts/Poppins/Poppins-Thin.ttf');
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .login-btn {
   border-radius: 20em;
 }
 
-.main-title{
+.main-title {
   font-size: 5em;
   font-family: "Poppins-Bold";
 }
 
-.sub-title{
+.sub-title {
   font-size: 2em;
   font-family: "Poppins-Regular";
 }
 
-body{
+body {
   background-color: #c8ffeb !important;
 }
 
@@ -59,20 +71,7 @@ body{
 
 .carousel {
   border-radius: 50px;
-  overflow: hidden; 
-}
-
-<<<<<<< HEAD
-@keyframes scrollAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  overflow: hidden;
 }
 
 .scroll-button {
@@ -84,57 +83,9 @@ body{
 }
 
 .scroll-icon {
-  font-size: 60px; /* Tamaño del icono */
+  font-size: 60px;
 }
 
-
-
-=======
-.card-title{
-  font-family:"Poppins-Bold";
+.card-title {
+  font-family: "Poppins-SemiBold";
 }
-
-.card-text, .card-subtitle {
-  font-family: "Poppins-Regular";
-}
-.btn-outline-light{
-  font-family: "Poppins-Regular";
-}
->>>>>>> 1b0b3117375ed19f573be160a84a815c508a9e6e
-/* Estilos generales para el texto en las tarjetas */
-/* .card-title,
-.card-text {
-  margin-bottom: 10px;
-} */
-
-/* Media query para pantallas pequeñas (menos de 576px) */
-/* @media (max-width: 575.98px) {
-  .card-title,
-  .card-text {
-    font-size: 14px;
-    padding-right:10px;
-  }
-  .icon{
-    padding: 0px;
-  }
-} */
-
-/* Media query para pantallas medianas (de 576px a 991.98px) */
-/* @media (min-width: 576px) and (max-width: 991.98px) {
-  .card-title,
-  .card-text {
-    font-size: 17px;
-    padding:10px;
-  }
-  .icon{
-  padding:10px;
-  }
-} */
-
-/* Media query para pantallas grandes (más de 992px) */
-/* @media (min-width: 992px) {
-  .card-title,
-  .card-text {
-    font-size: 18px;
-  }
-} */
