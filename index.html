@@ -53,9 +53,10 @@
   </nav>
 
   <!-- Background with cover -->
+  
   <div style="position: relative;">
     <img src="./bg/background-cover.jpg" alt="background cover"
-      style="width: 100%; height: calc(100vh - 56px); filter: brightness(.5); object-fit:cover;">
+      style="width: 100%; height: calc(100vh - 56px); filter: brightness(.5); object-fit:cover ;">
     <div class="text-center px-2"
       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
       <h1 class="text-white main-title fw-bold">Travel World</h1>
@@ -69,11 +70,18 @@
           crear recuerdos inolvidables?</p>
       </div>
     </div>
+    <!-- Scroll down button -->
+    <div class="scroll-button">
+      <a href="#Novedades" style="text-decoration: none; color: white;">
+        <i class="bi bi-arrow-down scroll-icon"></i>
+      </a>
+    </div>
   </div>
+  
 
   <main style="overflow: hidden;" class="mb-5">
     <!-- Novedades -->
-    <div class="mt-5 mb-5" style="position: relative;">
+    <div id= "Novedades" class="mt-5 mb-5" style="position: relative;">
       <div class="circle" style="position: absolute; left: -4.5em; top: -2em; z-index: -10;"></div>
       <div class="little-circle" style="position: absolute; left: 8em; top: 6em; z-index: -10;"></div>
       <div class="container">

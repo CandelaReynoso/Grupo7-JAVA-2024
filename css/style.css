@@ -13,13 +13,7 @@
   src: url('./fonts/Poppins/Poppins-Bold.ttf');
 }
 
-.cover {
-  background-image: url('./bg/Background.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
+
 
 .login-btn {
   border-radius: 20em;
@@ -57,6 +51,32 @@ body{
   border-radius: 50px;
   overflow: hidden; 
 }
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollAnimation 3s infinite;
+}
+
+.scroll-icon {
+  font-size: 60px; /* Tamaño del icono */
+}
+
+
 
 /* Estilos generales para el texto en las tarjetas */
 /* .card-title,
