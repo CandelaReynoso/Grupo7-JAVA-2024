@@ -1,9 +1,11 @@
 // DB //
 let destinos = [];
+let opiniones = [];
 
 window.addEventListener("DOMContentLoaded", async () => {
-  await cargarDestinos();
+  await cargarData();
   mostrarDestinos();
+  mostrarOpiniones();
 });
 
 const users = [
@@ -15,6 +17,15 @@ const users = [
   },
 ];
 
+// Función para cargar destinos/opiniones y asignarlas a la variable global
+const cargarData = async () => {
+  const res = await fetch("https://simons89.github.io/fakeApi/destinos.json");
+  console.log(res);
+  const data = await res.json();
+  destinos = data.destinos;
+  opiniones = data.opiniones;
+};
+
 // Función para mostrar las tarjetas de los destinos
 const mostrarDestinos = () => {
   const contenedorDestinos = document.querySelector("#contenedor-destinos");
@@ -24,7 +35,7 @@ const mostrarDestinos = () => {
     const destinoHTML = `
       <div class="col">
         <div class="card shadow-sm" style="border: .8em solid white; cursor: pointer;" data-bs-toggle="modal"
-          data-bs-target="#opinionModal" onclick="mostrarOpiniones(${destino.id})">
+          data-bs-target="#opinionModal" onclick="mostrarOpinionesDestino(${destino.id})">
           <img src="${destino.img}" style="height: 255px;" class="card-img-top">
           <div class="card-body px-1">
             <h5 class="card-title" style="color: #3d3e48;">${destino.destino}</h5>
@@ -43,15 +54,32 @@ const mostrarDestinos = () => {
   });
 };
 
-// Función para cargar destinos y asignarlas a la variable global
-const cargarDestinos = async () => {
-  const res = await fetch("https://simons89.github.io/fakeApi/opiniones.json");
-  const data = await res.json();
-  destinos = data;
+// Función para mostrar las opiniones
+const mostrarOpiniones = () => {
+  const contenedorOpiniones = document.querySelector("#contenedor-opiniones");
+  contenedorOpiniones.innerHTML = "";
+
+  opiniones.forEach((opinion) => {
+    let opinionHTML = `
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <span style="display: flex; align-items: center;">
+              <img src="${opinion.img}" class="rounded-circle object-fit-cover " style="height: 2.3rem; width: 2.3rem;"
+                class="avatar-xxl rounded-circle" alt="Foto de perfil">
+              <h5 class="card-title mt-2 ms-2">${opinion.nombre}</h5>
+            </span>
+            <p class="card-text mt-3">${opinion.opinion}</p>
+          </div>
+        </div>
+      </div>
+    `;
+    contenedorOpiniones.innerHTML += opinionHTML;
+  });
 };
 
 // Muestra las opiniones del index
-const mostrarOpiniones = (idDestino) => {
+const mostrarOpinionesDestino = (idDestino) => {
   let modalTitle = document.querySelector(".modal-title");
   let modalBody = document.querySelector(".modal-body");
   const destinoEncontrado = getDestino(idDestino);
