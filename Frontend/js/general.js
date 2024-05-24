@@ -20,7 +20,6 @@ const users = [
 // Función para cargar destinos/opiniones y asignarlas a la variable global
 const cargarData = async () => {
   const res = await fetch("https://simons89.github.io/fakeApi/destinos.json");
-  console.log(res);
   const data = await res.json();
   destinos = data.destinos;
   opiniones = data.opiniones;
@@ -127,6 +126,12 @@ function submitRegisterForm(event) {
 
   if (!username || !email || !password || !confirmPassword) {
     errorMessages.innerHTML = "<p>Todos los campos son obligatorios.</p>";
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    errorMessages.innerHTML = "<p>Formato de Email incorrecto.</p>";
     return;
   }
 
